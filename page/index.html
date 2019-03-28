@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HeinHtet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="top">
+        <div class="container">
+            <div class="col-md-12 nav-bar" id="nav-bar">
+                <img class="profile-img"
+                    src="https://scontent.frgn5-1.fna.fbcdn.net/v/t1.0-1/p320x320/13680842_1252111604820684_3107260717704689466_n.jpg?_nc_cat=105&_nc_ht=scontent.frgn5-1.fna&oh=65ee75f2e9938dd5964cf5c0f5de0525&oe=5CB86D07" />
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Work</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container top-middle-body">
+            <h1>I'm HeinHtet</h1>
+            <p>A <span class="pro">pro</span>grammer</p>
+            <img class="bottom-cloud" src="../assets/cloud.svg" alt="">
+            <img class="top-cloud" src="../assets/cloud.svg" alt="">
+            <img class="land-img" src="../assets/land.svg" />
+        </div>
+    </div>
+    <div class="container middle-section">
+        <img class="me-img" src="../assets/me.svg" alt="">
+        <h1>Hi</h1>
+        <p class="intro-p">I'm a web designer / developer based in Toronto, Canada. I have a passion for web design and love to create for web and mobile devices.</p>
+    </div>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("nav-bar").style.top = "0";
+            } else {
+                document.getElementById("nav-bar").style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body>
+
+</html>

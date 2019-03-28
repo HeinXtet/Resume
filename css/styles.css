@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+}
+
+.profile-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.top {
+    background-color: #226597;
+}
+
+.nav-bar {
+    padding: 20px;
+    top: 8px;
+    position: fixed;
+    display: block;
+    transition: top 0.3s;
+}
+
+.menu {
+    margin-top: 20px;
+    float: right;
+}
+
+.menu ul {
+    display: inline-block;
+    list-style: none;
+}
+
+.menu a:link, :visited {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.menu a:hover {
+    color: aqua;
+    text-shadow: rgba(red, green, blue, alpha);
+}
+
+.top-middle-body {
+    padding-top: 40px;
+    color: #7fe7cc;
+    position: relative;
+    text-align: center;
+}
+
+.pro{
+    color: white;
+    text-decoration: underline;
+}
+
+.land-img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.top-cloud {
+    position: absolute;
+    top: 150px;
+    right: 100px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+}
+.middle-section{ 
+    padding: 35px;
+    text-align: center;
+}
+
+.me-img {
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+}
+.middle-section h1 {
+    color: #226597;
+    padding: 16px;
+}
+
+.intro-p{
+    max-width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .nav-bar {
+        text-align: center;
+    }
+    .menu {
+        display: inline-block;
+        float: none;
+    }
+    .menu ul {
+        display: inline-block;
+        padding: 20px;
+        text-align: center;
+    }
+    .top-cloud {
+        position: absolute;
+        top: 30px;
+        width: 40px;
+        height: 40px;
+        right: 30px;
+    }
+    .bottom-cloud {
+        position: absolute;
+        bottom: 30px;
+        width: 40px;
+        height: 40px;
+        left: 30px;
+    }
+    .intro-p {
+        max-width: 100%;
+    }
+}
