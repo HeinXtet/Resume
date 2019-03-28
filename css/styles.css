@@ -3,6 +3,7 @@ body {
     opacity:0;
     transition: opacity 2s;
     -webkit-transition: opacity 2s; /* Safari */
+
 }
 
 body h1 {
@@ -147,11 +148,14 @@ body * {
     display: inline-block;
 }
 
+.contact-frame {
+    padding: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .contact a{
-    margin-top: 50px;
-    margin-bottom: 50px;
     padding: 20px;
-    width: 200px;
     display: inline-block;
     border-radius: 20px;
     opacity: 0.9;
@@ -163,6 +167,10 @@ body * {
 .contact  :hover {
  opacity: 1.6;
 
+}
+.contact {
+    margin-top: 10px;
+    display: inline-block
 }
 
 .contact i {
