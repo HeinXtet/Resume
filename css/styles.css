@@ -350,5 +350,9 @@ body * {
         max-width: 100%;
     }
 
+    .footer ul li a   {
+        padding: 10px;   
+    }
+
     
 }
