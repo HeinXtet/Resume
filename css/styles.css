@@ -1,5 +1,13 @@
 body {
     margin: 0;
+    opacity:0;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s; /* Safari */
+}
+
+body h1 {
+    font-family: 'Handlee', cursive;
+
 }
 
 .profile-img {
@@ -10,6 +18,11 @@ body {
 
 .top {
     background-color: #226597;
+}
+
+body * {
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 .nav-bar {
@@ -25,15 +38,15 @@ body {
     float: right;
 }
 
-.menu ul {
-    display: inline-block;
-    list-style: none;
-}
+    .menu ul {
+        display: inline-block;
+        list-style: none;
+    }
 
-.menu a:link, :visited {
-    text-decoration: none;
-    color: aquamarine;
-}
+    .menu a:link, :visited {
+        text-decoration: none;
+        color: aquamarine;
+    }
 
 .menu a:hover {
     color: aqua;
@@ -69,7 +82,6 @@ body {
     left: 30px;
 }
 .middle-section{ 
-    padding: 35px;
     text-align: center;
 }
 
@@ -89,7 +101,169 @@ body {
     text-align: center;
 }
 
-@media screen and (max-width: 480px) {
+.middle-do { 
+    padding-top: 40px;
+}
+.can-do{
+    padding-top: 30px;
+}
+
+.left-do img {
+    margin-top: 40px;
+}
+
+.right-do {
+    text-align: center;
+}
+
+.right-do p {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.need-middle {
+    padding-top: 50px
+}
+
+.right-want { 
+    padding-top: 30px;
+}
+
+.help {
+    text-align: center;
+    padding-top: 60px;
+    text-align: center;
+}
+.help p {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.help p {
+    display: inline-block;
+}
+
+.contact a{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    width: 200px;
+    display: inline-block;
+    border-radius: 20px;
+    opacity: 0.9;
+    background-color: #226597;
+    text-decoration: none;
+}
+
+
+.contact  :hover {
+ opacity: 1.6;
+
+}
+
+.contact i {
+    color: white;
+}
+.contact p {
+    margin-left: 20px;
+    color: white;
+    display: inline;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #226597;
+    color: white;
+}
+
+.footer ul li {
+    display: inline-block;
+
+}
+
+.footer ul li a       {
+    text-decoration: none;
+    padding: 30px;
+    color: white;   
+}
+
+.footer p {
+    margin-top: 10px;
+    margin-left: 40px
+}
+
+.footer a:link, :visited {
+    text-decoration: none;
+    color: aquamarine;
+}
+.footer a:hover {
+    color: aqua;
+    text-shadow: rgba(red, green, blue, alpha);
+}
+
+/* work.html */
+
+.top-middle-body {
+    padding-bottom: 100px   ;
+    position: relative;
+}
+
+.top-middle-body h1 {
+    font-size: 100px;
+    padding-top: 10px;
+    
+}
+
+.left-flag{
+    left: 150px;
+    bottom: 10px;
+    position: absolute;
+}
+
+.w-left-cloud {
+    left: 0px;
+    bottom: 100px;
+    position: absolute;
+    
+}
+.w-right-cloud {
+    right: 0px;
+    bottom: 100px;
+    position: absolute;
+}
+
+.right-flag{
+    right: 190px;
+    bottom: 10px;
+    position: absolute;
+}
+
+.intro-work {
+    text-align: center;
+}
+.pencil-img {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+}
+
+.intro-work p {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 30%;
+}
+
+.intro-work h1 {
+    color: #226597;
+}
+
+.mahar {
+    background-color: #2FC3FF;
+    height: 300px;
+}
+
+@media screen and (max-width: 600px) {
     .nav-bar {
         text-align: center;
     }
@@ -119,4 +293,55 @@ body {
     .intro-p {
         max-width: 100%;
     }
+
+    .right-do  {
+        padding-top: 40px;
+    }
+
+    .right-do p {
+        padding-top: 20px;
+        max-width: 100%; 
+    }
+
+    .left-do img {
+        margin-top: -10px;
+    }
+
+    .can-do{
+        padding-top: 0;
+    }
+
+    .help  p {
+        padding-top: 30px;  
+        max-width: 100%;
+    }
+
+    .w-left-cloud {
+        top : 10px;
+        left: 10px;
+        height: 60px;
+        width: 60px;
+    }
+
+    .w-right-cloud {
+        top : 10px;
+        right: 10px;
+        height: 60px;
+        width: 60px;
+    }
+
+    .left-flag {
+        left : 10px;
+    }
+
+    .right-flag {
+        right  : 40px;
+    }
+
+    .intro-work p {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    
 }
